@@ -91,10 +91,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.navigationController?.navigationBar.tintColor = navigationcolor
                 self.navigationController?.navigationBar.backgroundColor = color
                 UIApplication.shared.statusBarView?.backgroundColor = color
-                
-                
                 self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navigationcolor]
                 self.navigationController?.navigationBar.barStyle = .default
+                self.title = "Black Hole"
             })
         }
         else
@@ -104,9 +103,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.navigationController?.navigationBar.tintColor = UIColor.white
                 self.navigationController?.navigationBar.backgroundColor = color
                 UIApplication.shared.statusBarView?.backgroundColor = color
-                
                 self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
                 self.navigationController?.navigationBar.barStyle = .black
+                self.title = ""
             })
         }
     }
